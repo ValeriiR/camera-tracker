@@ -4,11 +4,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Run application
 
-Open console in workspaceFolder folder
+Open console terminal in root folder
 
 Run `npm install` if you run application for a first time
 
 Run `npx json-server --watch db.json` to run server
+
+Open new console terminal in root folder
 
 Run `npm start` to run application
 
