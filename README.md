@@ -1,4 +1,10 @@
-# CameraTracker
+
+## Requirements
+Node.js
+
+Angular cli version 8.3.22
+
+## CameraTracker
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
@@ -21,8 +27,9 @@ Repeat steps from Run Application then press F5
 ## SignIn
 
 login: user
+
 password: 123qwe
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
