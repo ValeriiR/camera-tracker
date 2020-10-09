@@ -1,0 +1,35 @@
+<mat-toolbar color="primary">
+    <div>
+        <span class="material-icons">polymer</span>
+    </div>
+    <div class="display-flex flex-1">
+        <a routerLink="/cameras">{{'NAVIGATION.CAMERAS' | translate}}</a>
+        <a routerLink="/reporting">{{'NAVIGATION.REPORTING' | translate}}</a>
+        <a routerLink="/settings">{{'NAVIGATION.SETTINGS' | translate}}</a>
+    </div>
+    <div>
+
+    </div>
+    <div class="display-flex">
+        <div fxHide.gt-xs>
+            <button [matMenuTriggerFor]="menuAuth" mat-icon-button>
+                <mat-icon>menu</mat-icon>
+            </button>
+            <mat-menu #menuAuth="matMenu">
+                <button mat-menu-item (click)="signOut()">{{'NAVIGATION.SIGNOUT' | translate}}</button>
+            </mat-menu>
+        </div>
+        <div class="display-flex" fxHide.xs>
+            <button mat-button class="navigation-item" (click)="signOut()">Sign out</button>
+            <div class="navigation-item">{{currentUser.login}}</div>
+        </div>
+        <button [matMenuTriggerFor]="menuTranslate" mat-icon-button>
+            <span>{{ translateServcice.currentLang }}</span>
+        </button>
+        <mat-menu #menuTranslate="matMenu">
+            <button mat-menu-item (click)="selectLanguage('en')">English</button>
+            <button mat-menu-item (click)="selectLanguage('ru')">Russian</button>
+        </mat-menu>
+    </div>
+
+</mat-toolbar>

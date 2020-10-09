@@ -1,0 +1,43 @@
+{
+  "camerasResponse": {
+    "camerasCount": 10,
+    "cameras": [
+      {
+        "imageUrl": "assets/images/1.jpg",
+        "indicator": true
+      },
+      {
+        "imageUrl": "assets/images/2.jpg",
+        "indicator": true
+      },
+      {
+        "imageUrl": "assets/images/3.jpg",
+        "indicator": false
+      },
+      {
+        "imageUrl": "assets/images/4.jpg",
+        "indicator": true
+      },
+      {
+        "imageUrl": "assets/images/5.jpg",
+        "indicator": false
+      },
+      {
+        "imageUrl": "assets/images/6.jpg",
+        "indicator": false
+      },
+      {
+        "imageUrl": "assets/images/7.jpg",
+        "indicator": true
+      },
+      {
+        "imageUrl": "assets/images/8.jpg",
+        "indicator": true
+      }
+    ]
+  },
+  "auth": {
+    "login": "user",
+    "password": "123qwe"
+  }
+}

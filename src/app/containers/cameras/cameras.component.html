@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="flex-container">
+        <mat-card *ngFor="let camera of cameras " class="camera-card columns">
+            <img mat-card-image [src]="camera.imageUrl">
+            <mat-card-content>
+                <ng-container *ngIf="camera.indicator">
+                    <div class="display-flex">
+                        <span class="material-icons color-green">control_camera</span>
+                        <span class="margin-top-3px">pass</span>
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="!camera.indicator">
+                    <div class="display-flex">
+                        <span class="material-icons color-red">control_camera</span>
+                        <span class="margin-top-3px">fail</span>
+                    </div>
+                </ng-container>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

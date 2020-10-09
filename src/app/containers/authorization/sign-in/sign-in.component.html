@@ -1,0 +1,31 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+    <div class="title">LOGIN</div>
+
+    <form style="display: flex; flex-direction: column;" name="loginForm" [formGroup]="loginForm" (ngSubmit)="submit()"
+        novalidate>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Login</mat-label>
+            <input matInput formControlName="login">
+            <mat-icon matSuffix class="secondary-text">person</mat-icon>
+            <mat-error *ngIf="loginForm.get('login').hasError('required')">
+                Login is required
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" formControlName="password">
+            <mat-icon matSuffix class="secondary-text">vpn_key</mat-icon>
+            <mat-error>
+                Password is required
+            </mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button color="accent" class="submit-button" aria-label="LOG IN"
+            [disabled]="loginForm.invalid">
+            LOGIN
+        </button>
+
+    </form>
+</div>
